@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .wrapper {
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body .wrapper .card {
+  position: relative;
+}
+body .wrapper .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.4s;
+}
+body .wrapper .card .front {
+  border-radius: 10px;
+  position: relative;
+  background: #96c4a8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+body .wrapper .card .front .content {
+  opacity: 0.7;
+  color: #5f0c9a;
+  text-align: center;
+  transition: 0.5s;
+}
+body .wrapper .card .front .content i {
+  font-size: 3rem;
+  display: inline-block;
+}
+body .wrapper .card .front .content h3 {
+  font-size: 1rem;
+}
+body .wrapper .card:hover .front {
+  transform: translateY(0px);
+  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #87b5b4, inset -20px 0 80px #a5cccc, inset 20px 0 300px #87b5b4, inset -20px 0 300px #a5cccc, 0 0 20px #96c4c4, -10px 0 30px #87b5b4, 10px 0 30px #a5cccc;
+}
+body .wrapper .card:hover .front .content {
+  opacity: 1;
+}
+body .wrapper .card:hover .back {
+  transform: translateY(0px);
+}
+body .wrapper .card .back {
+  border-radius: 10px;
+  position: relative;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 5px 5px 10px #d0d0d0, -5px -5px 10px #ffffff; /* Sombra externa e interna */
+  transform: translateY(-100px);
+}
+body .wrapper .card .back p, body .wrapper .card .back a {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+body .wrapper .card .back a {
+  color: black;
+  outline: 1px dashed #333;
+  padding: 10px;
+  margin-top: 15px;
+  display: inline-block;
+}
+body .wrapper .card .back a:hover {
+  color: #BF1515; /* Nova cor ao passar o mouse sobre o link */
+}
+
+.img {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}/*# sourceMappingURL=style.css.map */
